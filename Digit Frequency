@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int no0 = 0;
+    int no1 = 0;
+    int no2 = 0;
+    int no3 = 0;
+    int no4 = 0;
+    int no5 = 0;
+    int no6 = 0;
+    int no7 = 0;
+    int no8 = 0;
+    int no9 = 0;
+    char *s;
+    s = malloc(1024 * sizeof(char));
+    scanf("%[^\n]", s);
+    s = realloc(s, strlen(s) + 1); 
+    for(int i =0;s[i] != '\0';i++)
+    {
+        if(s[i] == '0')
+        {
+            no0+=1;
+        }else if(s[i] == '1')
+        {
+            no1+=1;
+        }else if(s[i] == '2')
+        {
+            no2+=1;
+        }else if(s[i] == '3')
+        {
+            no3+=1;
+        }else if(s[i] == '4')
+        {
+            no4+=1;
+        }else if(s[i] == '5')
+        {
+            no5+=1;
+        }else if(s[i] == '6')
+        {
+            no6+=1;
+        }else if(s[i] == '7')
+        {
+            no7+=1;
+        }else if(s[i] == '8')
+        {
+            no8+=1;
+        }else if(s[i] == '9')
+        {
+            no9+=1;
+        }
+    }
+    printf("%d %d %d %d %d %d %d %d %d %d",no0,no1,no2,no3,no4,no5,no6,no7,no8,no9);   
+    return 0;
+}
